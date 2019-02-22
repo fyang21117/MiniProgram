@@ -1,0 +1,6 @@
+<!--pages/test.wxml-->
+
+<button type="default" bindtap='logBtn'>查看启动日志</button>
+<view style='height:20px;'></view>
+
+<button type="default" bindtap='jumpBtn'>新建页面</button>
