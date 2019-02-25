@@ -1,13 +1,12 @@
-// pages/new/new.js
+// pages/Cpage/Cpage.js
 var util = require('../../utils/util.js');
-
 Page({
     /**
      * 如果delta大于页面数，返回首页面
      */
-    backBtn:function(){
+    backBtn: function () {
         wx.navigateBack({
-            delta:1
+            delta: 1
         })
     },
 
@@ -20,7 +19,6 @@ Page({
         //打印
         console.log(time)
     },
-    
     /**
      * 页面的初始数据
      */
@@ -28,6 +26,9 @@ Page({
 
     },
 
+    onLaunch: function () {
+        console.log('Cpage Launching ...');
+    },
     /**
      * 生命周期函数--监听页面加载
      */
@@ -46,6 +47,7 @@ Page({
      * 生命周期函数--监听页面显示
      */
     onShow: function () {
+
     },
 
     /**

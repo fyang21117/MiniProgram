@@ -1,0 +1,26 @@
+/* pages/new/new.wxss */
+.menu{
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  background: #fff;
+  border-bottom:rgb(235, 221, 221) solid 1px;
+  z-index: 100000
+}
+
+.top-nav{
+    white-space: nowrap;
+    width: 95%;
+    margin: 0 auto;
+}
+
+.top-btn{
+    display: inline-block;
+    padding: 22rpx;
+    font-size: 16px;
+}
+
+.top-hoverd-btn{
+    color: #3a3434;
+    border-bottom: #3a3434 solid 1px;
+}

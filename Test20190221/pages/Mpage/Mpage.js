@@ -57,7 +57,7 @@ Page({
 
     gotoBtn:function(){
         wx.navigateTo({
-            url: '../test/test'
+            url: '../Apage/Apage'
         })
     }
 })

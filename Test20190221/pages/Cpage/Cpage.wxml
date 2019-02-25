@@ -1,6 +1,5 @@
-<!--pages/new/new.wxml-->
+<!--pages/Cpage/Cpage.wxml-->
 <view style='height:20px;'></view>
-
 <button 
     type="default" 
     bindtap='backBtn'>返回上一页</button>

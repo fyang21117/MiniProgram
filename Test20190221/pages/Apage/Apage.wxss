@@ -1,0 +1,195 @@
+/* pages/test.wxss */
+.menu{
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  background: #fff;
+  border-bottom:rgb(235, 221, 221) solid 1px;
+  z-index: 100000
+}
+
+.top-nav{
+    white-space: nowrap;
+    width: 95%;
+    margin: 0 auto;
+}
+
+.top-btn{
+    display: inline-block;
+    padding: 22rpx;
+    font-size: 16px;
+}
+
+.top-hoverd-btn{
+    color: #42bd56;
+    border-bottom: #42bd56 solid 1px;
+}
+
+.flex-row-style{
+    width: 100%;
+    top:0;
+    margin:0;/*居中*/
+    border: 1rpx;
+    border-style: solid;
+    border-color: #ffffff;
+}
+
+.flex-row{
+    display: flex;/*flex块级，inline-flex:行内快*/
+    flex-wrap: wrap;/*如果元素不是弹性盒对象的元素，则 flex-wrap 属性不起作用*/
+
+    /*格子间隔*/
+    justify-content: space-between;
+    border: 1rpx;
+    border-style: solid;
+    border-color: #ffffff;
+    margin:0 ;
+}
+
+.r1{
+    width: 49%;
+    height: 200rpx;
+    color: #0c95f0;
+    border: 1rpx;
+    border-style: solid;
+    border-color: #ffffff;
+
+    /*文字居中*/
+    text-align: left;
+    font-size:20rpx;
+
+}
+
+.item {
+  padding: 20rpx;
+  position: relative;
+}
+
+.flex-wrp-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.item-left {
+   flex: 1; /* 重要 */
+   align-items:center;
+}
+ 
+.item-right {
+  position: relative;
+  align-items:center;
+}
+
+
+
+.btn1{
+    width: border-area;
+    height: 100%;
+  background-color: #e1eef7;
+  border-radius: 10rpx;
+  display: flex;
+  flex-direction: row;
+  flex-grow: 1;
+  align-items: center;
+  justify-content: left;
+  font-size: 30rpx;
+  padding: 20rpx;
+}
+
+.btn2{
+    width: border-area;
+    height: 100%;
+  background-color: #e1eef7;
+  border-radius: 0rpx;
+  display: flex;
+  flex-direction: row;
+  flex-grow: 1;
+  align-items: center;
+  justify-content: left;
+  font-size: 30rpx;
+  padding: 20rpx;
+}
+
+.btn3{
+    width: border-area;
+    height: 100%;
+  background-color: #e1eef7;
+  border-radius: 0rpx;
+  display: flex;
+ flex-direction: row;
+  flex-grow: 1;
+  align-items: center;
+  justify-content: left;
+  font-size: 30rpx;
+  padding: 20rpx;
+}
+
+.btn4{
+    width: border-area;
+    height: 100%;
+  background-color: #e1eef7;
+  border-radius: 0rpx;
+  display: flex;
+ flex-direction: row;
+  flex-grow: 1;
+  align-items: center;
+  justify-content: left;
+  font-size: 30rpx;
+  padding: 20rpx;
+}
+
+.btn5{
+    width: border-area;
+    height: 100%;
+  background-color: #e1eef7;
+  border-radius: 0rpx;
+  display: flex;
+ flex-direction: row;
+  flex-grow: 1;
+  align-items: center;
+  justify-content: left;
+  font-size: 30rpx;
+  padding: 20rpx;
+}
+
+.btn6{
+    width: border-area;
+    height: 100%;
+  background-color: #e1eef7;
+  border-radius: 0rpx;
+  display: flex;
+ flex-direction: row;
+  flex-grow: 1;
+  align-items: center;
+  justify-content: left;
+  font-size: 30rpx;
+  padding: 20rpx;
+}
+
+.btn7{
+    width: border-area;
+    height: 100%;
+  background-color: #e1eef7;
+  border-radius: 0rpx;
+  display: flex;
+ flex-direction: row;
+  flex-grow: 1;
+  align-items: center;
+  justify-content: left;
+  font-size: 30rpx;
+  padding: 20rpx;
+}
+
+.btn8{
+    width: border-area;
+    height: 100%;
+  background-color: #e1eef7;
+  border-radius: 0rpx;
+  display: flex;
+ flex-direction: row;
+  flex-grow: 1;
+  align-items: center;
+  justify-content: left;
+  font-size: 30rpx;
+  padding: 20rpx;
+}

@@ -1,0 +1,12 @@
+<!--pages/new/new.wxml-->
+
+<view class="menu">
+    <scroll-view scroll-x="true" class="top-nav">
+    <view bindtap="recommend" class="top-btn {{recommend}}">推荐</view>
+    <view bindtap="home_app" class="top-btn {{home_app}}">家电</view>
+    <view bindtap="household" class="top-btn {{household}}">居家</view>
+    <view bindtap="kitchen_app" class="top-btn {{kitchen_app}}">餐厨</view>
+    <view bindtap="player" class="top-btn {{player}}">影音</view>
+    </scroll-view>
+</view>
+

@@ -1,0 +1,162 @@
+<!--pages/test.wxml-->
+<view class="menu">
+    <scroll-view scroll-x="true" class="top-nav">
+        <view bindtap="my_device" class="top-btn {{my_device}}">全部</view>
+       <view bindtap="living_room" class="top-btn {{living_room}}">客厅</view>
+        <view bindtap="bedroom" class="top-btn {{bedroom}}">卧室</view>
+        <view bindtap="kitchen" class="top-btn {{kitchen}}">厨房</view>
+        <view bindtap="study" class="top-btn {{study}}">书房</view>
+        <view bindtap="office" class="top-btn {{office}}">办公室</view>
+        <view bindtap="bathroom" class="top-btn {{bathroom}}">浴室</view>
+        <view bindtap="balcony" class="top-btn {{balcony}}">阳台</view>
+        <view bindtap="toilet" class="top-btn {{toilet}}">卫生间</view>
+    </scroll-view>
+</view>
+
+
+<scroll-view scroll-y="true" class="container">
+<view class = "flex-row-style">
+    <view class="flex-row">
+        <view class="flex-item r1">
+            <button class='btn1'  bindtap="living_room" >
+            <text class="btn-t1" font-weight:bold >客厅顶灯\n状态：关</text>
+            <image style="width:40px;height:40px"
+            src='../images/icon-lightoff.png' mode='aspectFit'></image>
+            </button>
+        </view>
+
+        <view class="flex-item r1">
+            <button class='btn2'  bindtap="bedroom">
+            <text class="btn-t1" font-weight:bold >卧室顶灯\n情景：睡眠</text>
+            <image style="width:40px;height:40px"
+            src='../images/icon-lighton.png' mode='aspectFit'></image>
+            </button>
+        </view>
+    </view>
+
+</view>
+
+<view class = "flex-row-style">
+    <view class="flex-row">
+        <view class="flex-item r1">
+            <button class='btn3'  bindtap="living_room" >
+            <text class="btn-t3" font-weight:bold >扫地机器人\n模式：自动</text>
+            <image style="width:40px;height:40px"
+            src='../images/icon-androidon.png' mode='aspectFit'></image>
+            </button>
+        </view>
+
+        <view class="flex-item r1">
+            <button class='btn4'  bindtap="bedroom">
+            <text class="btn-t4" font-weight:bold >书房风扇\n风速：中</text>
+            <image style="width:40px;height:40px"
+            src='../images/icon-fanon.png' mode='aspectFit'></image>
+            </button>
+        </view>
+    </view>
+</view>
+
+<view class = "flex-row-style">
+    <view class="flex-row">
+        <view class="flex-item r1">
+            <button class='btn5'  bindtap="living_room" >
+            <text class="btn-t5" font-weight:bold >洗衣机\n状态：开</text>
+            <image style="width:40px;height:40px"
+            src='../images/icon-washing.png' mode='aspectFit'></image>
+            </button>
+        </view>
+
+        <view class="flex-item r1">
+            <button class='btn6'  bindtap="bedroom">
+            <text class="btn-t6" font-weight:bold >车库车辆\n数量：1</text>
+            <image style="width:40px;height:40px"
+            src='../images/icon-car.png' mode='aspectFit'></image>
+            </button>
+        </view>
+    </view>
+</view>
+
+<view class = "flex-row-style">
+    <view class="flex-row">
+        <view class="flex-item r1">
+            <button class='btn7'  bindtap="living_room" >
+            <text class="btn-t7" font-weight:bold >监控摄像\n状态：开</text>
+            <image style="width:40px;height:40px"
+            src='../images/icon-videoon.png' mode='aspectFit'></image>
+            </button>
+        </view>
+
+        <view class="flex-item r1">
+            <button class='btn8'  bindtap="bedroom">
+            <text class="btn-t8" font-weight:bold >智能语音\n状态：开</text>
+            <image style="width:40px;height:40px"
+            src='../images/icon-voice.png' mode='aspectFit'></image>
+            </button>
+        </view>
+    </view>
+</view>
+<view class = "flex-row-style">
+    <view class="flex-row">
+        <view class="flex-item r1">
+            <button class='btn1'  bindtap="living_room" >
+            <text class="btn-t1" font-weight:bold >智能门锁\n状态：关</text>
+            <image style="width:40px;height:40px"
+            src='../images/icon-lock.png' mode='aspectFit'></image>
+            </button>
+        </view>
+
+        <view class="flex-item r1">
+            <button class='btn2'  bindtap="bedroom">
+            <text class="btn-t1" font-weight:bold >智能门锁\n状态：开</text>
+            <image style="width:40px;height:40px"
+            src='../images/icon-unlock.png' mode='aspectFit'></image>
+            </button>
+        </view>
+    </view>
+</view>
+
+<view class = "flex-row-style">
+    <view class="flex-row">
+        <view class="flex-item r1">
+            <button class='btn3'  bindtap="kitchen">
+            <view>厨房</view>
+            </button>
+        </view>
+        <view class="flex-item r1">
+            <button class='btn4'bindtap="study">
+            <view>书房</view>
+            </button>
+        </view>
+    </view>
+</view>
+
+<view class = "flex-row-style">
+    <view class="flex-row">
+        <view class="flex-item r1">
+            <button class='btn5' bindtap="office">
+            <view>办公室</view>
+            </button>
+        </view>
+        <view class="flex-item r1">
+            <button class='btn6'bindtap="bathroom">
+            <view>浴室</view>
+            </button>
+        </view>
+    </view>
+</view>
+
+<view class = "flex-row-style">
+    <view class="flex-row">
+        <view class="flex-item r1">
+            <button class='btn7' bindtap="balcony">
+            <view>阳台</view>
+            </button>
+        </view>
+        <view class="flex-item r1">
+            <button class='btn8' bindtap="toilet">
+            <view>卫生间</view>
+            </button>
+        </view>
+    </view>
+</view>
+</scroll-view>

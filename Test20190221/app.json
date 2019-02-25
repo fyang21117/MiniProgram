@@ -1,14 +1,54 @@
 {
   "pages":[
-    "pages/index/index",
-    "pages/test/test",
-    "pages/logs/logs",
-    "pages/new/new"
+    "pages/Apage/Apage",
+    "pages/Bpage/Bpage",
+    "pages/Cpage/Cpage",
+    "pages/Mpage/Mpage",
+    "pages/logs/logs"
   ],
+
   "window":{
+    "backgroundColor": "#FF657AF4",
     "backgroundTextStyle":"light",
     "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "WeChat",
-    "navigationBarTextStyle":"black"
-  }
+    "navigationBarTitleText": "MiniJia",
+    "navigationBarTextStyle":"black",
+    "enablePullDownRefresh": true
+  },
+
+  "tabBar": {
+        "color": "#dddddd",
+        "selectedColor": "#3cc51f",
+        "borderStyle": "black",
+        "backgroundColor": "#ffffff",
+    "list": [{
+            "pagePath": "pages/Apage/Apage",
+            "iconPath": "pages/images/a1.png",
+            "selectedIconPath": "pages/images/a2.png",
+            "text": "MiniJia"
+        },{
+            "pagePath": "pages/Bpage/Bpage",
+            "iconPath": "pages/images/b1.png",
+            "selectedIconPath": "pages/images/b2.png",
+            "text": "商城"
+        },{
+            "pagePath": "pages/Cpage/Cpage",
+            "iconPath": "pages/images/c1.png",
+            "selectedIconPath": "pages/images/c2.png",
+            "text": "智能"
+        },{
+            "pagePath": "pages/Mpage/Mpage",
+            "iconPath": "pages/images/d1.png",
+            "selectedIconPath": "pages/images/d2.png",
+            "text": "我的"
+        }]
+    },
+    
+   "networkTimeout": {
+    "request": 10000,
+    "conectSocket":10000,
+    "uploadFile":10000,
+    "downloadFile": 10000
+    },
+    "debug": true
 }
