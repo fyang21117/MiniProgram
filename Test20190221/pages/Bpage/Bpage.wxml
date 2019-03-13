@@ -10,3 +10,15 @@
     </scroll-view>
 </view>
 
+<view>
+<swiper indicator-dots="{{indicatorDots}}"autopaly="{{autoplay}}" interval="2000"duration="5000">
+ <block wx:for="{{imgUrls}}"wx:key="unique">  
+    <swiper-item>
+       <image src="../others/a2.png" 
+       width="50px" 
+       height="40px"
+       mode="aspectFill"></image>
+    </swiper-item>
+</block>  
+</swiper>
+</view>

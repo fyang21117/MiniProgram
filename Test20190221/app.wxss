@@ -1,6 +1,7 @@
 /**app.wxss**/
 .container {
-  height: 100%;
+  height: scroll_height;
+  width:scroll_width;
   display: flex;
   flex-direction: column;
   align-items: center;

@@ -22,28 +22,35 @@
     <button 
     type="default" 
     bindtap='gotoBtn'>{{motto}}</button>
-
    <!--text class="user-motto">{{motto}}</text-->
   </view>
 
    <view class="sl-col">
         <!-- 建立按钮，为按钮绑定函数 -->
-        <button bindtap="baike">产品百科</button>
-        <image class="second-img" mode="scaleToFill" src="pages/images/blankpage.png"></image>
+        <button bindtap="baike">
+        <image class="img-style" mode="scaleToFill" src="../others/a1.png"></image>
         <text>产品百科</text>
+        </button>
     </view>
+
     <view class="sl-col">
-            <button bindtap="news">最新资讯</button>
-            <image class="second-img" mode="scaleToFill" src="pages/images/blankpage.png"></image>
+            <button bindtap="news">
+            <image class="img-style" mode="scaleToFill" src="../others/b1.png"></image>
             <text>最新资讯</text>
+            </button>
     </view>
+
     <view class="sl-col">
-            <button bindtap="voice_control">语音控制</button>
-            <image class="second-img" mode="scaleToFill" src="pages/images/blankpage.png"></image>
+            <button bindtap="voice_control">
+            <image class="img-style" mode="scaleToFill" src="../others/c1.png"></image>
             <text>语音控制</text>
+            </button>
     </view>
+
     <view class="sl-col">
-            <image class="second-img" mode="scaleToFill" src="pages/images/blankpage.png"></image>
-            <text>书房</text>
+    <button bindtap="settings">
+    <image class="img-style" mode="scaleToFill" src="../others/d1.png"></image>
+            <text>设置</text>
+    </button>
     </view>
 </view>

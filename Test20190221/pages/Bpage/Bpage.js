@@ -1,4 +1,5 @@
 // pages/new/new.js
+var app = getApp()
 Page({
     data: {
         new: 'top-hoverd-btn',
@@ -7,26 +8,28 @@ Page({
         household: '',
         kitchen_app: '',
         player: '',
-        hidden: false
+        hidden: false,
+        imgUrls: 
+        ['../pages/others/a2.png',
+        '../pages/others/b2.png',
+        '../pages/others/c2.png',
+        '../pages/others/d2.png'],
+        indicatorDots:true,
+        autoplay:true
     },
     recommend: function () {
-        console.log('recommend');
         this.updateBtnStatus('recommend');
     },
     home_app: function () {
-        console.log('home_app');
         this.updateBtnStatus('home_app');
     },
     household: function () {
-        console.log('household');
         this.updateBtnStatus('household');
     },
     kitchen_app: function () {
-        console.log('kitchen_app');
         this.updateBtnStatus('kitchen_app');
     },
     player: function () {
-        console.log('player');
         this.updateBtnStatus('player');
     },
 
@@ -36,9 +39,7 @@ Page({
     onShow: function () {
         var that = this;
         setTimeout(function () {
-            that.setData({
-                hidden: true
-            });
+            that.setData({hidden: true});
         }, 1500);
     },
     updateBtnStatus: function (k) {

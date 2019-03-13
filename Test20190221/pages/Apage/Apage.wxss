@@ -1,87 +1,69 @@
-/* pages/test.wxss */
+/*顶部导航栏布局style*/
 .menu{
   position: fixed;
   top: 0px;
   width: 100%;
   background: #fff;
   border-bottom:rgb(235, 221, 221) solid 1px;
-  z-index: 100000
+  z-index: 100000;
 }
-
+/*顶部导航栏可滑动style*/
 .top-nav{
     white-space: nowrap;
     width: 95%;
     margin: 0 auto;
 }
-
+/*顶部导航栏按钮style*/
 .top-btn{
     display: inline-block;
-    padding: 22rpx;
+    padding: 16rpx;
     font-size: 16px;
 }
-
+/*顶部导航栏按钮被覆盖style*/
 .top-hoverd-btn{
     color: #42bd56;
     border-bottom: #42bd56 solid 1px;
 }
 
-.flex-row-style{
+/*显示内容横布局style*/
+.flex-row{
     width: 100%;
     top:0;
-    margin:0;/*居中*/
-    border: 1rpx;
-    border-style: solid;
-    border-color: #ffffff;
-}
-
-.flex-row{
     display: flex;/*flex块级，inline-flex:行内快*/
-    flex-wrap: wrap;/*如果元素不是弹性盒对象的元素，则 flex-wrap 属性不起作用*/
-
-    /*格子间隔*/
-    justify-content: space-between;
+    flex-wrap:wrap;/*如果元素不是弹性盒对象的元素，则flex-wrap属性不起作用*/
+    position: relative;
+    justify-content: space-between;/*格子间隔*/
     border: 1rpx;
     border-style: solid;
     border-color: #ffffff;
     margin:0 ;
 }
-
+/*按钮布局style*/
 .r1{
     width: 49%;
     height: 200rpx;
     color: #0c95f0;
+    position: relative;
     border: 1rpx;
     border-style: solid;
     border-color: #ffffff;
-
-    /*文字居中*/
     text-align: left;
     font-size:20rpx;
-
+    float: right;
 }
-
-.item {
-  padding: 20rpx;
-  position: relative;
-}
-
-.flex-wrp-row {
-  display: flex;
-  flex-direction: row;
-}
-
-.item-left {
+/*左侧按钮style*/
+.item_left {
    flex: 1; /* 重要 */
    align-items:center;
+   position: absolute;
+   left: 20px;
 }
- 
-.item-right {
-  position: relative;
+/*右侧按钮style*/
+.item_right {
+  position: absolute;
+  right: 20px;
   align-items:center;
 }
-
-
-
 .btn1{
     width: border-area;
     height: 100%;
@@ -95,10 +77,9 @@
   font-size: 30rpx;
   padding: 20rpx;
 }
-
 .btn2{
-    width: border-area;
-    height: 100%;
+  width: border-area;
+  height: 100%;
   background-color: #e1eef7;
   border-radius: 0rpx;
   display: flex;

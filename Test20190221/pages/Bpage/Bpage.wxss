@@ -24,3 +24,10 @@
     color: #3a3434;
     border-bottom: #3a3434 solid 1px;
 }
+
+
+
+swiper-item image {
+  width: 50px;
+  height: 40px;
+}

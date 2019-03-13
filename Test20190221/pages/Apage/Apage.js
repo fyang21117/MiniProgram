@@ -1,106 +1,123 @@
-// pages/test.js
 Page({
     /**
-     * 页面的初始数据
+     * 页面数据初始化
      */
     data: {
         new: 'top-hoverd-btn',
         my_device:'',
-        living_room: '',
-        bedroom: '',
+        living_room_page: '',
+        bedroom_page: '',
+        balcony_page: '',
+        study_page: '',
         kitchen: '',
-        study: '',
         office: '',
         bathroom: '',
-        balcony: '',
         toilet: '',
+        TopIndex:0,
         hidden: false,
     },
+    /**
+     * top-btn的响应事件
+     */
     my_device:function(){
-        console.log('my_device');
         this.updateBtnStatus('my_device');
-        wx.showToast({
-            title: '这是我的设备',
-            icon: 'succes',
-            duration: 1000,
-            mask: true
-        })
+        this.setData({ TopIndex: 0 })
     },
-    living_room:function(event){
-        console.log('living_room');
-        this.updateBtnStatus('living_room');
+    living_room_page:function(event){
+        this.updateBtnStatus('living_room_page');
+        this.setData({ TopIndex: 1 })
+    },
+    bedroom_page: function (event) {
+        this.updateBtnStatus('bedroom_page');
+        this.setData({ TopIndex: 2 })
+    },
+    balcony_page: function (event) {
+        this.updateBtnStatus('balcony_page');
+        this.setData({ TopIndex: 3 })
+    },
+    study_page: function (event) {
+        this.updateBtnStatus('study_page');
+        this.setData({ TopIndex: 4 })
+    },
+    /**
+     * top-btn对应页面下的按钮响应
+     */
+    living_room: function () {
+        var topindex  = getApp().globalData.TopIndex;
+        if ({topindex}==1){this.updateBtnStatus('living_room_page');}
         wx.showToast({
-            title: '这是客厅',
+            title: '客厅设备',
             icon: 'succes',
             duration: 1000,
             mask: true
         })
     },
     bedroom: function () {
-        console.log('bedroom');
-        this.updateBtnStatus('bedroom');
+        var topindex = getApp().globalData.TopIndex;
+        if ({ topindex } == 2){ this.updateBtnStatus('bedroom'); }
         wx.showToast({
-            title: '这是卧室',
-            icon: 'succes',
-            duration: 1000,
-            mask: true
-        })
-    },
-    kitchen: function () {
-        console.log('kitchen');
-        this.updateBtnStatus('kitchen');
-        wx.showToast({
-            title: '这是厨房',
-            icon: 'succes',
-            duration: 1000,
-            mask: true
-        })
-    },
-    study: function () {
-        console.log('study');
-        this.updateBtnStatus('study');
-        wx.showToast({
-            title: '这是书房',
-            icon: 'succes',
-            duration: 1000,
-            mask: true
-        })
-    },
-    office: function () {
-        console.log('office');
-        this.updateBtnStatus('office');
-        wx.showToast({
-            title: '这是办公室',
-            icon: 'succes',
-            duration: 1000,
-            mask: true
-        })
-    },
-    bathroom: function () {
-        console.log('bathroom');
-        this.updateBtnStatus('bathroom');
-        wx.showToast({
-            title: '这是浴室',
+            title: '卧室设备',
             icon: 'succes',
             duration: 1000,
             mask: true
         })
     },
     balcony: function () {
-        console.log('balcony');
-        this.updateBtnStatus('balcony');
+        var topindex = getApp().globalData.TopIndex;
+        if ({ topindex } == 3) { this.updateBtnStatus('balcony'); }
         wx.showToast({
-            title: '这是阳台',
+            title: '阳台设备',
             icon: 'succes',
             duration: 1000,
             mask: true
         })
     },
+    study: function () {
+        var topindex = getApp().globalData.TopIndex;
+        if ({ topindex } == 4) { this.updateBtnStatus('study'); }
+        wx.showToast({
+            title: '书房设备',
+            icon: 'succes',
+            duration: 1000,
+            mask: true
+        })
+    },
+
+    /**
+     * 未做page分类下的按钮响应
+     */
+    kitchen: function () {
+        this.updateBtnStatus('kitchen');
+        wx.showToast({
+            title: '设备匹配中',
+            icon: 'succes',
+            duration: 1000,
+            mask: true
+        })
+    },
+    office: function () {
+        this.updateBtnStatus('office');
+        wx.showToast({
+            title: '设备匹配中',
+            icon: 'succes',
+            duration: 1000,
+            mask: true
+        })
+    },
+    bathroom: function () {
+        this.updateBtnStatus('bathroom');
+        wx.showToast({
+            title: '设备匹配中',
+            icon: 'succes',
+            duration: 1000,
+            mask: true
+        })
+    },
+
     toilet: function () {
-        console.log('toilet');
         this.updateBtnStatus('toilet');
         wx.showToast({
-            title: '这是卫生间',
+            title: '设备匹配中',
             icon: 'succes',
             duration: 1000,
             mask: true
@@ -121,6 +138,11 @@ Page({
     updateBtnStatus: function (k) {
         this.setData({
             my_device: this.getHoverd('my_device', k),
+            living_room_page: this.getHoverd('living_room_page',k),
+            bedroom_page: this.getHoverd('bedroom_page', k),
+            balcony_page: this.getHoverd('balcony_page', k),
+            study_page: this.getHoverd('study_page', k),
+            
             living_room: this.getHoverd('living_room', k),
             bedroom: this.getHoverd('bedroom', k),
             kitchen: this.getHoverd('kitchen', k),

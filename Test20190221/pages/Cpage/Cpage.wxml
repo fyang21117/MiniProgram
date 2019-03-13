@@ -8,6 +8,6 @@
 <view class="container">
   <!-- 建立按钮，为按钮绑定函数 -->
   <button bindtap="getTime">点击获取当前时间</button>
-  <!-- wx:if判断是否存在 -->
+  <!-- wx:if判断是否存在 -->               
   <text wx:if="{{time}}">{{time}}</text>
 </view>

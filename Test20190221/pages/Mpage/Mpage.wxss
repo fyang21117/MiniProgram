@@ -19,3 +19,12 @@
 .usermotto {
   margin-top: 200px;
 }
+
+.s1-col{
+    height:60px;
+    width:100%
+}
+.img-style{
+    height: 50px;
+    width:50px
+}

@@ -33,7 +33,19 @@ App({
       }
     })
   },
+    /**
+   * 生命周期函数--监听页面加载
+   */
+    onLoad: function (options) {
+    var windowWidth = wx.getSystemInfoSync().windowWidth;
+    var windowHeight = wx.getSystemInfoSync().windowHeight;
+//rpx与px单位之间的换算 : 750/windowWidth = 屏幕的高度（rpx）/windowHeight
+    var scroll_height = 750 * windowHeight / windowWidth - 150;
+    var scroll_width = this.setData({ scroll_height: scroll_height })
+    },
+
   globalData: {
-    userInfo: null
+    userInfo: null,
+      TopIndex: 0
   }
 })
