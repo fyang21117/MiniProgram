@@ -1,4 +1,3 @@
-// pages/new/new.js
 var app = getApp()
 Page({
     data: {

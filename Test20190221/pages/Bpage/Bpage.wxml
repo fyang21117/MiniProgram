@@ -1,5 +1,3 @@
-<!--pages/new/new.wxml-->
-
 <view class="menu">
     <scroll-view scroll-x="true" class="top-nav">
     <view bindtap="recommend" class="top-btn {{recommend}}">推荐</view>

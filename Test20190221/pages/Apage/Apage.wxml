@@ -1,4 +1,3 @@
-<!--pages/test.wxml-->
 
 <view class="menu">
     <scroll-view scroll-x="true" class="top-nav">
@@ -35,14 +34,14 @@
 
     <view class="flex-row">
         <view class="r1">
-            <button class='btn3'  bindtap="study" >
+            <button class='btn'  bindtap="study" >
             <text class='item_left' font-weight:bold >扫地机器人\n模式：自动</text>
             <image class='item_right' style="width:40px;height:40px"
             src='../images/icon-androidon.png' mode='aspectFit'></image>
             </button>
         </view>
         <view class="r1">
-            <button class='btn4'  bindtap="study">
+            <button class='btn'  bindtap="study">
             <text class='item_left' font-weight:bold >书房风扇\n风速：中</text>
             <image class='item_right' style="width:40px;height:40px"
             src='../images/icon-fanon.png' mode='aspectFit'></image>
@@ -52,14 +51,14 @@
 
     <view class="flex-row">
         <view class="r1">
-            <button class='btn5'  bindtap="balcony" >
+            <button class='btn'  bindtap="balcony" >
             <text class='item_left' font-weight:bold >洗衣机\n状态：开</text>
             <image class='item_right' style="width:40px;height:40px"
             src='../images/icon-washing.png' mode='aspectFit'></image>
             </button>
         </view>
         <view class="r1">
-            <button class='btn6'  bindtap="">
+            <button class='btn'  bindtap="">
             <text class='item_left' font-weight:bold >车库车辆\n数量：1</text>
             <image class='item_right' style="width:40px;height:40px"
             src='../images/icon-car.png' mode='aspectFit'></image>
@@ -69,14 +68,14 @@
 
     <view class="flex-row">
         <view class="r1">
-            <button class='btn7'  bindtap="balcony" >
+            <button class='btn'  bindtap="balcony" >
             <text class='item_left' font-weight:bold >监控摄像\n状态：开</text>
             <image class='item_right' style="width:40px;height:40px"
             src='../images/icon-videoon.png' mode='aspectFit'></image>
             </button>
         </view>
         <view class="r1">
-            <button class='btn8'  bindtap="">
+            <button class='btn'  bindtap="">
             <text class='item_left' font-weight:bold >智能语音\n状态：开</text>
             <image class='item_right' style="width:40px;height:40px"
             src='../images/icon-voice.png' mode='aspectFit'></image>
@@ -86,14 +85,14 @@
 
     <view class="flex-row">
         <view class="r1">
-            <button class='btn1'  bindtap="balcony" >
+            <button class='btn'  bindtap="balcony" >
             <text class='item_left' font-weight:bold >智能门锁\n状态：关</text>
             <image class='item_right' style="width:40px;height:40px"
             src='../images/icon-lock.png' mode='aspectFit'></image>
             </button>
         </view>
         <view class="r1">
-            <button class='btn2'  bindtap="balcony">
+            <button class='btn'  bindtap="balcony">
             <text class='item_left' font-weight:bold >智能门锁\n状态：开</text>
             <image class='item_right' style="width:40px;height:40px"
             src='../images/icon-unlock.png' mode='aspectFit'></image>
@@ -103,14 +102,14 @@
 
     <view class="flex-row">
         <view class="r1">
-            <button class='btn1'  bindtap="living_room" >
+            <button class='btn'  bindtap="living_room" >
             <text class='item_left'  font-weight:bold >客厅吊灯\n状态：关</text>
             <image class='item_right' style="width:40px;height:40px;"
             src='../images/icon-lightoff.png'></image>
             </button>
         </view>
         <view class="r1">
-            <button class='btn2'  bindtap="bedroom">
+            <button class='btn'  bindtap="bedroom">
             <text class='item_left' font-weight:bold >卧室顶灯\n情景：睡眠</text>
             <image class='item_right' style="width:40px;height:40px"
             src='../images/icon-lighton.png' ></image>
@@ -120,14 +119,14 @@
 
     <view class="flex-row">
         <view class="r1">
-            <button class='btn3'  bindtap="study" >
+            <button class='btn'  bindtap="study" >
             <text class='item_left' font-weight:bold >扫地机器人\n模式：自动</text>
             <image class='item_right' style="width:40px;height:40px"
             src='../images/icon-androidon.png' mode='aspectFit'></image>
             </button>
         </view>
         <view class="r1">
-            <button class='btn4'  bindtap="study">
+            <button class='btn'  bindtap="study">
             <text class='item_left' font-weight:bold >书房风扇\n风速：中</text>
             <image class='item_right' style="width:40px;height:40px"
             src='../images/icon-fanon.png' mode='aspectFit'></image>
@@ -137,14 +136,14 @@
 
     <view class="flex-row">
         <view class="r1">
-            <button class='btn5'  bindtap="balcony" >
+            <button class='btn'  bindtap="balcony" >
             <text class='item_left' font-weight:bold >洗衣机\n状态：开</text>
             <image class='item_right' style="width:40px;height:40px"
             src='../images/icon-washing.png' mode='aspectFit'></image>
             </button>
         </view>
         <view class="r1">
-            <button class='btn6'  bindtap="">
+            <button class='btn'  bindtap="">
             <text class='item_left' font-weight:bold >车库车辆\n数量：1</text>
             <image class='item_right' style="width:40px;height:40px"
             src='../images/icon-car.png' mode='aspectFit'></image>
@@ -154,14 +153,14 @@
 
     <view class="flex-row">
         <view class="r1">
-            <button class='btn7'  bindtap="balcony" >
+            <button class='btn'  bindtap="balcony" >
             <text class='item_left' font-weight:bold >监控摄像\n状态：开</text>
             <image class='item_right' style="width:40px;height:40px"
             src='../images/icon-videoon.png' mode='aspectFit'></image>
             </button>
         </view>
         <view class="r1">
-            <button class='btn8'  bindtap="">
+            <button class='btn'  bindtap="">
             <text class='item_left' font-weight:bold >智能语音\n状态：开</text>
             <image class='item_right' style="width:40px;height:40px"
             src='../images/icon-voice.png' mode='aspectFit'></image>
@@ -171,14 +170,14 @@
 
     <view class="flex-row">
         <view class="r1">
-            <button class='btn1'  bindtap="balcony" >
+            <button class='btn'  bindtap="balcony" >
             <text class='item_left' font-weight:bold >智能门锁\n状态：关</text>
             <image class='item_right' style="width:40px;height:40px"
             src='../images/icon-lock.png' mode='aspectFit'></image>
             </button>
         </view>
         <view class="r1">
-            <button class='btn2'  bindtap="balcony">
+            <button class='btn'  bindtap="balcony">
             <text class='item_left' font-weight:bold >智能门锁\n状态：开</text>
             <image class='item_right' style="width:40px;height:40px"
             src='../images/icon-unlock.png' mode='aspectFit'></image>
@@ -190,14 +189,14 @@
 <scroll-view scroll-y="true"class="container"wx:if="{{TopIndex == 1}}">
     <view class="flex-row">
     <view class="r1 " >
-        <button class='btn1'  bindtap="living_room" >
+        <button class='btn'  bindtap="living_room" >
         <text class='item_left'  font-weight:bold >客厅吊灯\n状态：关</text>
         <image class='item_right' style="width:40px;height:40px;"
         src='../images/icon-lightoff.png'></image>
         </button>
     </view>
     <view class="r1">
-        <button class='btn3'  bindtap="living_room" >
+        <button class='btn'  bindtap="living_room" >
         <text class='item_left' font-weight:bold >扫地机器人\n模式：扫地</text>
         <image class='item_right' style="width:40px;height:40px"
         src='../images/icon-androidon.png' mode='aspectFit'></image>
@@ -209,7 +208,7 @@
 <scroll-view scroll-y="true"class="container"wx:if="{{TopIndex == 2}}">
     <view class="flex-row">
         <view class="r1">
-            <button class='btn2'  bindtap="bedroom">
+            <button class='btn'  bindtap="bedroom">
             <text class='item_left' font-weight:bold >卧室顶灯\n情景：睡眠</text>
             <image class='item_right' style="width:40px;height:40px"
             src='../images/icon-lighton.png' ></image>
@@ -221,7 +220,7 @@
 <scroll-view scroll-y="true"class="container"wx:if="{{TopIndex == 3}}">
     <view class="flex-row">
         <view class="r1">
-            <button class='btn7'  bindtap="balcony" >
+            <button class='btn'  bindtap="balcony" >
             <text class='item_left' font-weight:bold >监控摄像\n状态：开</text>
             <image class='item_right' style="width:40px;height:40px"
             src='../images/icon-videoon.png' mode='aspectFit'></image>
@@ -229,7 +228,7 @@
         </view>
 
         <view class="r1">
-            <button class='btn2'  bindtap="balcony">
+            <button class='btn'  bindtap="balcony">
             <text class='item_left' font-weight:bold >智能门锁\n状态：开</text>
             <image class='item_right' style="width:40px;height:40px"
             src='../images/icon-unlock.png' mode='aspectFit'></image>
@@ -239,7 +238,7 @@
 
     <view class="flex-row">
         <view class="r1">
-            <button class='btn5'  bindtap="balcony" >
+            <button class='btn'  bindtap="balcony" >
             <text class='item_left' font-weight:bold >洗衣机\n状态：开</text>
             <image class='item_right' style="width:40px;height:40px"
             src='../images/icon-washing.png' mode='aspectFit'></image>
@@ -251,7 +250,7 @@
 <scroll-view scroll-y="true"class="container"wx:if="{{TopIndex == 4}}">
     <view class="flex-row">
         <view class="r1">
-            <button class='btn3'  bindtap="study" >
+            <button class='btn'  bindtap="study" >
             <text class='item_left' font-weight:bold >扫地机器人\n模式：自动</text>
             <image class='item_right' style="width:40px;height:40px"
             src='../images/icon-androidon.png' mode='aspectFit'></image>
@@ -259,7 +258,7 @@
         </view>
 
         <view class="r1">
-            <button class='btn4'  bindtap="study">
+            <button class='btn'  bindtap="study">
             <text class='item_left' font-weight:bold >书房风扇\n风速：中</text>
             <image class='item_right' style="width:40px;height:40px"
             src='../images/icon-fanon.png' mode='aspectFit'></image>

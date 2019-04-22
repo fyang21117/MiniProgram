@@ -64,9 +64,22 @@
   right: 20px;
   align-items:center;
 }
+.btn{
+  width: border-area;
+  height: 100%;
+  background-color: #e1eef7;
+  border-radius: 10rpx;
+  display: flex;
+  flex-direction: row;
+  flex-grow: 1;
+  align-items: center;
+  justify-content: left;
+  font-size: 30rpx;
+  padding: 20rpx;
+}
 .btn1{
-    width: border-area;
-    height: 100%;
+  width: border-area;
+  height: 100%;
   background-color: #e1eef7;
   border-radius: 10rpx;
   display: flex;
@@ -81,93 +94,9 @@
   width: border-area;
   height: 100%;
   background-color: #e1eef7;
-  border-radius: 0rpx;
+  border-radius: 10rpx;
   display: flex;
   flex-direction: row;
-  flex-grow: 1;
-  align-items: center;
-  justify-content: left;
-  font-size: 30rpx;
-  padding: 20rpx;
-}
-
-.btn3{
-    width: border-area;
-    height: 100%;
-  background-color: #e1eef7;
-  border-radius: 0rpx;
-  display: flex;
- flex-direction: row;
-  flex-grow: 1;
-  align-items: center;
-  justify-content: left;
-  font-size: 30rpx;
-  padding: 20rpx;
-}
-
-.btn4{
-    width: border-area;
-    height: 100%;
-  background-color: #e1eef7;
-  border-radius: 0rpx;
-  display: flex;
- flex-direction: row;
-  flex-grow: 1;
-  align-items: center;
-  justify-content: left;
-  font-size: 30rpx;
-  padding: 20rpx;
-}
-
-.btn5{
-    width: border-area;
-    height: 100%;
-  background-color: #e1eef7;
-  border-radius: 0rpx;
-  display: flex;
- flex-direction: row;
-  flex-grow: 1;
-  align-items: center;
-  justify-content: left;
-  font-size: 30rpx;
-  padding: 20rpx;
-}
-
-.btn6{
-    width: border-area;
-    height: 100%;
-  background-color: #e1eef7;
-  border-radius: 0rpx;
-  display: flex;
- flex-direction: row;
-  flex-grow: 1;
-  align-items: center;
-  justify-content: left;
-  font-size: 30rpx;
-  padding: 20rpx;
-}
-
-.btn7{
-    width: border-area;
-    height: 100%;
-  background-color: #e1eef7;
-  border-radius: 0rpx;
-  display: flex;
- flex-direction: row;
-  flex-grow: 1;
-  align-items: center;
-  justify-content: left;
-  font-size: 30rpx;
-  padding: 20rpx;
-}
-
-.btn8{
-    width: border-area;
-    height: 100%;
-  background-color: #e1eef7;
-  border-radius: 0rpx;
-  display: flex;
- flex-direction: row;
   flex-grow: 1;
   align-items: center;
   justify-content: left;

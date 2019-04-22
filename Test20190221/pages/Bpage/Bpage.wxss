@@ -1,4 +1,3 @@
-/* pages/new/new.wxss */
 .menu{
   position: fixed;
   top: 0px;

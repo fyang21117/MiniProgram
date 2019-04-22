@@ -12,11 +12,11 @@
     "backgroundTextStyle":"light",
     "navigationBarBackgroundColor": "#fff",
     "navigationBarTitleText": "MiniJia",
-    "navigationBarTextStyle":"black",
+    "navigationBarTextStyle": "black",
     "enablePullDownRefresh": true
   },
 
-  "tabBar": {
+  "tabBar":{
         "color": "#dddddd",
         "selectedColor": "#3cc51f",
         "borderStyle": "black",
@@ -25,22 +25,26 @@
             "pagePath": "pages/Apage/Apage",
             "iconPath": "pages/images/a1.png",
             "selectedIconPath": "pages/images/a2.png",
-            "text": "MiniJia"
+            "text": "MiniJia",
+            "color": "black"
         },{
             "pagePath": "pages/Bpage/Bpage",
             "iconPath": "pages/images/b1.png",
             "selectedIconPath": "pages/images/b2.png",
-            "text": "商城"
+            "text": "商城",
+            "color": "black"
         },{
             "pagePath": "pages/Cpage/Cpage",
             "iconPath": "pages/images/c1.png",
             "selectedIconPath": "pages/images/c2.png",
-            "text": "智能"
+            "text": "智能",
+            "color": "black"
         },{
             "pagePath": "pages/Mpage/Mpage",
             "iconPath": "pages/images/d1.png",
             "selectedIconPath": "pages/images/d2.png",
-            "text": "我的"
+            "text": "我的",
+            "color": "black"
         }]
     },
     

@@ -1,3 +1,6 @@
 {
-    "navigationBarTitleText": "MiniJia"
+    "windows":{
+        "navigationBarTitleText": "MiniJia",
+        "enablePullDownRefresh": true
+    }
 }

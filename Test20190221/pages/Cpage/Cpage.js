@@ -1,24 +1,6 @@
 // pages/Cpage/Cpage.js
-var util = require('../../utils/util.js');
 Page({
-    /**
-     * 如果delta大于页面数，返回首页面
-     */
-    backBtn: function () {
-        wx.navigateBack({
-            delta: 1
-        })
-    },
 
-    getTime: function () {
-        var time = util.formatTime(new Date())
-        //为页面中time赋值
-        this.setData({
-            time: time
-        })
-        //打印
-        console.log(time)
-    },
     /**
      * 页面的初始数据
      */

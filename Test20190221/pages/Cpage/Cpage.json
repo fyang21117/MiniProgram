@@ -1,4 +1,8 @@
 {
   "usingComponents":{},
-"navigationBarTitleText": "智能模式"
+  
+        "windows": {
+            "navigationBarTitleText": "智能模式",
+            "enablePullDownRefresh": true
+        }
 }
