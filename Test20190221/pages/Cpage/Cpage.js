@@ -2,12 +2,18 @@
 Page({
 
     /**
-     * 页面的初始数据
+     * MINA框架同步数据：
+     * 视图层的信息和参数通过事件绑定，向逻辑层传递
+     * 逻辑层的数据通过数据绑定，向视图层传递数据
      */
     data: {
-
+        bindvar:"one"
     },
 
+    changetext(){
+        this.setData({bindvar:"two"})
+    },
+    
     onLaunch: function () {
         console.log('Cpage Launching ...');
     },

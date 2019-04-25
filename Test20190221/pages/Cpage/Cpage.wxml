@@ -1,4 +1,5 @@
 <!--pages/Cpage/Cpage.wxml-->
  <view>
-    <button>点击向服务器发起请求</button>
+    <text>{{bindvar}}</text>
+    <button catchtap='changetext'>改变字符</button>
  </view>

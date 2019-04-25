@@ -1,6 +1,4 @@
 {
-        "windows": {
-            "navigationBarTitleText": "设置",
-            "enablePullDownRefresh": false
-        }
+    "navigationBarTitleText": "设置",
+    "enablePullDownRefresh": false
 }

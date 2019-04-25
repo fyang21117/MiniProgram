@@ -1,5 +1,5 @@
 {
-  "pages":[
+  "pages": [
     "pages/Apage/Apage",
     "pages/Bpage/Bpage",
     "pages/Cpage/Cpage",
@@ -7,52 +7,58 @@
     "pages/logs/logs"
   ],
 
-  "window":{
+  "window": {
     "backgroundColor": "#FF657AF4",
-    "backgroundTextStyle":"light",
+    "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "MiniJia",
+    "navigationBarTitleText": "Minijia",
     "navigationBarTextStyle": "black",
     "enablePullDownRefresh": true
   },
 
-  "tabBar":{
-        "color": "#dddddd",
-        "selectedColor": "#3cc51f",
-        "borderStyle": "black",
-        "backgroundColor": "#ffffff",
-    "list": [{
-            "pagePath": "pages/Apage/Apage",
-            "iconPath": "pages/images/a1.png",
-            "selectedIconPath": "pages/images/a2.png",
-            "text": "MiniJia",
-            "color": "black"
-        },{
-            "pagePath": "pages/Bpage/Bpage",
-            "iconPath": "pages/images/b1.png",
-            "selectedIconPath": "pages/images/b2.png",
-            "text": "商城",
-            "color": "black"
-        },{
-            "pagePath": "pages/Cpage/Cpage",
-            "iconPath": "pages/images/c1.png",
-            "selectedIconPath": "pages/images/c2.png",
-            "text": "智能",
-            "color": "black"
-        },{
-            "pagePath": "pages/Mpage/Mpage",
-            "iconPath": "pages/images/d1.png",
-            "selectedIconPath": "pages/images/d2.png",
-            "text": "我的",
-            "color": "black"
-        }]
-    },
-    
-   "networkTimeout": {
+  "tabBar": {
+    "color": "#000000",
+    "selectedColor": "#3cc51f",
+    "borderStyle": "black",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/Apage/Apage",
+        "iconPath": "pages/images/a1.png",
+        "selectedIconPath": "pages/images/a2.png",
+        "text": "MiniJia",
+        "color": "black"
+      },
+      {
+        "pagePath": "pages/Bpage/Bpage",
+        "iconPath": "pages/images/b1.png",
+        "selectedIconPath": "pages/images/b2.png",
+        "text": "商城",
+        "color": "black"
+      },
+      {
+        "pagePath": "pages/Cpage/Cpage",
+        "iconPath": "pages/images/c1.png",
+        "selectedIconPath": "pages/images/c2.png",
+        "text": "智能",
+        "color": "black"
+      },
+      {
+        "pagePath": "pages/Mpage/Mpage",
+        "iconPath": "pages/images/d1.png",
+        "selectedIconPath": "pages/images/d2.png",
+        "text": "我的",
+        "color": "black"
+      }
+    ]
+  },
+  
+  "networkTimeout": {
     "request": 10000,
-    "conectSocket":10000,
-    "uploadFile":10000,
+    "conectSocket": 10000,
+    "uploadFile": 10000,
     "downloadFile": 10000
-    },
-    "debug": true
+  },
+
+  "debug": true
 }

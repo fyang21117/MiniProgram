@@ -1,6 +1,6 @@
 {
-        "windows": {
+
             "navigationBarTitleText": "Mini商城",
             "enablePullDownRefresh": true
-        }   
+
 }
