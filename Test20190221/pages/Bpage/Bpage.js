@@ -1,118 +1,83 @@
-var app = getApp()
 Page({
-    data: {
-        new: 'top-hoverd-btn',
-        recommend: '',
-        home_app: '',
-        household: '',
-        kitchen_app: '',
-        player: '',
-        hidden: false,
-        imgUrls: 
-        ['../pages/others/a2.png',
-        '../pages/others/b2.png',
-        '../pages/others/c2.png',
-        '../pages/others/d2.png'],
-        indicatorDots:true,
-        autoplay:true
-    },
-    recommend: function () {
-        this.updateBtnStatus('recommend');
-    },
-    home_app: function () {
-        this.updateBtnStatus('home_app');
-    },
-    household: function () {
-        this.updateBtnStatus('household');
-    },
-    kitchen_app: function () {
-        this.updateBtnStatus('kitchen_app');
-    },
-    player: function () {
-        this.updateBtnStatus('player');
-    },
+  data: {
+    new: 'top-hoverd-btn',
+    recommend: '',
+    dailyuse: '',
+    household: '',
+    kitchen: '',
+    player: '',
+    TopIndex: 0,
+    hidden: false,
 
-    onLaunch: function () {
-        console.log('Mini商城 Launching ...');
-    },
-    onShow: function () {
-        var that = this;
-        setTimeout(function () {
-            that.setData({hidden: true});
-        }, 1500);
-    },
-    updateBtnStatus: function (k) {
-        this.setData({
-            recommend: this.getHoverd('recommend', k),
-            home_app: this.getHoverd('home_app', k),
-            household: this.getHoverd('household', k),
-            kitchen_app: this.getHoverd('kitchen_app', k),
-            player: this.getHoverd('player', k),
-        });
-    },
-    getHoverd: function (src, dest) {
-        return (src === dest ? 'top-hoverd-btn' : '');
-    },
+    //轮播图
+    swiperCurrent: 1,
+    arr: [
+      {images: '../others/one.jpg'},
+      {images: '../others/two.jpg'},
+      {images: '../others/three.jpg'},
+      {images: '../others/four.jpg'}
+    ],
+    interval: 1000,
+    duration: 1000,
+    circular: true,
+    beforeColor: "black", //指示点颜色 
+    afterColor: "red", //当前选中的指示点颜色 
+    previousmargin: '0px', //前边距
+    nextmargin: '0px', //后边距
 
-    /**
-     * 页面的初始数据
-     */
-    data: {
+  },
+  recommend: function () {
+    this.updateBtnStatus('recommend');
+  },
+  dailyuse: function () {
+    this.updateBtnStatus('dailyuse');
+  },
+  household: function () {
+    this.updateBtnStatus('household');
+  },
+  kitchen: function () {
+    this.updateBtnStatus('kitchen');
+  },
+  player: function () {
+    this.updateBtnStatus('player');
+  },
 
-    },
+  //轮播图的切换事件 
+  swiperChange: function(e) {
+    console.log(e.detail.current);
+    this.setData({
+      swiperCurrent: e.detail.current //获取当前轮播图片的下标
+    })
+  },
+  //滑动图片切换 
+  chuangEvent: function(e) {
+    this.setData({
+      swiperCurrent: e.currentTarget.id
+    })
+  },
 
-    /**
-     * 生命周期函数--监听页面加载
-     */
-    onLoad: function (options) {
+  onLaunch: function () {
+    console.log('Bpage is Launching ...');
+  },
+  onShow: function () {
+    var that = this;
+    setTimeout(function () {
+      that.setData({
+        hidden: true
+      });
+    }, 1500);
+  },
+  updateBtnStatus: function (k) {
+    this.setData({
+      recommend: this.getHoverd('recommend', k),
+      dailyuse: this.getHoverd('dailyuse', k),
+      household: this.getHoverd('household', k),
+      kitchen: this.getHoverd('kitchen', k),
+      player: this.getHoverd('player', k),
+    });
+  },
+  getHoverd: function (src, dest) {
+    return (src === dest ? 'top-hoverd-btn' : '');
+  },
 
-    },
-
-    /**
-     * 生命周期函数--监听页面初次渲染完成
-     */
-    onReady: function () {
-
-    },
-
-    /**
-     * 生命周期函数--监听页面显示
-     */
-    onShow: function () {
-    },
-
-    /**
-     * 生命周期函数--监听页面隐藏
-     */
-    onHide: function () {
-
-    },
-
-    /**
-     * 生命周期函数--监听页面卸载
-     */
-    onUnload: function () {
-
-    },
-
-    /**
-     * 页面相关事件处理函数--监听用户下拉动作
-     */
-    onPullDownRefresh: function () {
-
-    },
-
-    /**
-     * 页面上拉触底事件的处理函数
-     */
-    onReachBottom: function () {
-
-    },
-
-    /**
-     * 用户点击右上角分享
-     */
-    onShareAppMessage: function () {
-
-    }
 })

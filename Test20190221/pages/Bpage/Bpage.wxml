@@ -1,22 +1,33 @@
 <view class="menu">
-    <scroll-view scroll-x="true" class="top-nav">
+  <scroll-view scroll-x="true" class="top-nav">
     <view bindtap="recommend" class="top-btn {{recommend}}">推荐</view>
-    <view bindtap="home_app" class="top-btn {{home_app}}">家电</view>
+    <view bindtap="dailyuse" class="top-btn {{dailyuse}}">超市</view>
     <view bindtap="household" class="top-btn {{household}}">居家</view>
-    <view bindtap="kitchen_app" class="top-btn {{kitchen_app}}">餐厨</view>
+    <view bindtap="kitchen" class="top-btn {{kitchen}}">餐厨</view>
     <view bindtap="player" class="top-btn {{player}}">影音</view>
-    </scroll-view>
+  </scroll-view>
 </view>
 
-<view>
-<swiper indicator-dots="{{indicatorDots}}"autopaly="{{autoplay}}" interval="2000"duration="5000">
- <block wx:for="{{imgUrls}}"wx:key="unique">  
-    <swiper-item>
-       <image src="../others/a2.png" 
-       width="50px" 
-       height="40px"
-       mode="aspectFill"></image>
-    </swiper-item>
-</block>  
-</swiper>
+<view class="banner-swiper">
+  <swiper 
+  indicator-dots="true" 
+  autoplay="true" 
+  current='{{swiperCurrent}}' 
+  indicator-color="{{beforeColor}}" 
+  indicator-active-color="{{afterColor}}" 
+  circular='{{circular}}' 
+  previous-margin="{{previousmargin}}" 
+  next-margin="{{nextmargin}}"
+  bindchange="swiperChange">
+
+    <block wx:for="{{arr}}" wx:key="key">
+      <swiper-item>
+        <image src="{{item.images}}" 
+        class="slide-image{{index == swiperCurrent?'active':''}}" 
+        bindchange="chuangEvent" mode="widthFix"
+        id="{{index}}">
+        </image>
+      </swiper-item>
+    </block>
+  </swiper>
 </view>

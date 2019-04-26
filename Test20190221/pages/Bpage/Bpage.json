@@ -1,6 +1,4 @@
 {
-
-            "navigationBarTitleText": "Mini商城",
-            "enablePullDownRefresh": true
-
+    "usingComponents": {},
+    "navigationBarTitleText": "Mini商城"
 }

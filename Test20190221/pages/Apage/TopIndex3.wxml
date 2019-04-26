@@ -1,0 +1,29 @@
+<scroll-view scroll-y="true" class="container" wx:if="{{TopIndex == 3}}">
+  <view class="flex-row">
+    <view class="r1">
+      <button class='btn' bindtap="balcony">
+        <text class='item_left' font-weight:bold>监控摄像\n状态：开</text>
+        <image class='item_right' style="width:40px;height:40px" 
+        src='../images/icon-videoon.png' mode='aspectFit'></image>
+      </button>
+    </view>
+
+    <view class="r1">
+      <button class='btn' bindtap="balcony">
+        <text class='item_left' font-weight:bold>智能门锁\n状态：开</text>
+        <image class='item_right' style="width:40px;height:40px" 
+        src='../images/icon-unlock.png' mode='aspectFit'></image>
+      </button>
+    </view>
+  </view>
+
+  <view class="flex-row">
+    <view class="r1">
+      <button class='btn' bindtap="balcony">
+        <text class='item_left' font-weight:bold>洗衣机\n状态：开</text>
+        <image class='item_right' style="width:40px;height:40px" 
+        src='../images/icon-washing.png' mode='aspectFit'></image>
+      </button>
+    </view>
+  </view>
+</scroll-view>

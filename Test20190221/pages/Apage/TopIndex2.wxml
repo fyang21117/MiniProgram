@@ -1,0 +1,11 @@
+<scroll-view scroll-y="true" class="container" wx:if="{{TopIndex == 2}}">
+  <view class="flex-row">
+    <view class="r1">
+      <button class='btn' bindtap="bedroom">
+        <text class='item_left' font-weight:bold>卧室顶灯\n情景：睡眠</text>
+        <image class='item_right' style="width:40px;height:40px" 
+        src='../images/icon-lighton.png'></image>
+      </button>
+    </view>
+  </view>
+</scroll-view>

@@ -2,14 +2,15 @@
 *app.wxss
 *选择器：针对相关元素进行页面样式定义
 */
-
-.container {
-    height: scroll_height;
-    width: scroll_width;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    padding: 200rpx 0;
-    box-sizing: border-box;
+.container{
+      /*弹性模型*/
+    display:flex;
+    /*垂直方向 列方向 排布*/
+    flex-direction:column;
+    /*居左*/
+    align-items:left;
+    /*要从整体解决排布的问题是最好的方案*/
+    width:100%;
+    background-color:rgb(255, 255, 255);
 }
+

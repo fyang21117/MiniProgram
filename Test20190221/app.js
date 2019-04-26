@@ -1,4 +1,7 @@
-//app.js
+/**
+ * app.js小程序的全局注册文件
+ */
+
 App({
   onLaunch: function() {
 
@@ -33,9 +36,7 @@ App({
       }
     })
   },
-  /**
-   * 生命周期函数--监听页面加载
-   */
+
   onLoad: function(options) {
     var windowWidth = wx.getSystemInfoSync().windowWidth;
     var windowHeight = wx.getSystemInfoSync().windowHeight;
@@ -46,6 +47,10 @@ App({
     })
   },
 
+  onShow: function(options) {},
+  onHide: function(options) {},
+  onError: function(msg) {},
+  
   globalData: {
     userInfo: null,
     TopIndex: 0

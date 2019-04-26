@@ -1,0 +1,19 @@
+<scroll-view scroll-y="true" class="container" wx:if="{{TopIndex == 4}}">
+  <view class="flex-row">
+    <view class="r1">
+      <button class='btn' bindtap="study">
+        <text class='item_left' font-weight:bold>扫地机器人\n模式：自动</text>
+        <image class='item_right' style="width:40px;height:40px" 
+        src='../images/icon-androidon.png' mode='aspectFit'></image>
+      </button>
+    </view>
+
+    <view class="r1">
+      <button class='btn' bindtap="study">
+        <text class='item_left' font-weight:bold>书房风扇\n风速：中</text>
+        <image class='item_right' style="width:40px;height:40px" 
+        src='../images/icon-fanon.png' mode='aspectFit'></image>
+      </button>
+    </view>
+  </view>
+</scroll-view>

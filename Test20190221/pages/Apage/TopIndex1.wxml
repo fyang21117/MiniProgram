@@ -1,0 +1,20 @@
+<scroll-view scroll-y="true" class="container" wx:if="{{TopIndex == 1}}">
+
+  <view class="flex-row">
+    <view class="r1 ">
+      <button class='btn' bindtap="living_room">
+        <text class='item_left' font-weight:bold>客厅吊灯\n状态：关</text>
+        <image class='item_right' style="width:40px;height:40px;" 
+        src='../images/icon-lightoff.png'></image>
+      </button>
+    </view>
+    <view class="r1">
+      <button class='btn' bindtap="living_room">
+        <text class='item_left' font-weight:bold>扫地机器人\n模式：扫地</text>
+        <image class='item_right' style="width:40px;height:40px" 
+        src='../images/icon-androidon.png' mode='aspectFit'></image>
+      </button>
+    </view>
+  </view>
+
+</scroll-view>

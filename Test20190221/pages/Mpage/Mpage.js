@@ -1,5 +1,9 @@
-//index.js
-//获取应用实例
+/**
+* 使用全局变量：
+* 定义为App对象的一个属性；
+* var app = getApp()
+* app.globalData.id++
+*/
 const app = getApp()
 
 Page({
@@ -59,5 +63,15 @@ Page({
         wx.navigateTo({
             url: '../Apage/Apage'
         })
+    },
+
+      /**
+   * 用户点击右上角分享
+   */
+  onShareAppMessage: function () {
+    return {
+      title: 'Minijia小程序',
+      path: '/page/user?id=123'
     }
+  }
 })

@@ -1,32 +1,50 @@
-.menu{
-  position: fixed;
+/*顶部导航栏style*/
+.menu {
+  position: relative;
   top: 0px;
   width: 100%;
   background: #fff;
-  border-bottom:rgb(235, 221, 221) solid 1px;
-  z-index: 100000
+  border-bottom: rgb(235, 221, 221) solid 1px;
+  z-index: 100000;
+}
+.top-nav {
+  white-space: nowrap;
+  width: 95%;
+  margin: 0 auto;
+}
+.top-btn {
+  display: inline-block;
+  padding: 16rpx;
+  font-size: 16px;
+}
+.top-hoverd-btn {
+  color: #42bd56;
+  border-bottom: #42bd56 solid 1px;
 }
 
-.top-nav{
-    white-space: nowrap;
-    width: 95%;
-    margin: 0 auto;
+/*图片轮番切换style*/
+.banner-swiper {
+ width: 100%;
+  top: 0;
+  margin: 0;
+  margin-top: 0;
+ height: 260rpx;
+ overflow: hidden;
+ position: relative;
 }
-
-.top-btn{
-    display: inline-block;
-    padding: 22rpx;
-    font-size: 16px;
+swiper {
+ display: block;
+ height: 260rpx;
+ position: relative;
 }
+.slide-image {
+ width: 96%;
 
-.top-hoverd-btn{
-    color: #3a3434;
-    border-bottom: #3a3434 solid 1px;
+ display: block;
+ margin: 0 auto;
+ margin-top:0rpx;
 }
-
-
-
-swiper-item image {
-  width: 50px;
-  height: 40px;
+.active{
+ margin-top:0rpx;
+ height: 260rpx;
 }

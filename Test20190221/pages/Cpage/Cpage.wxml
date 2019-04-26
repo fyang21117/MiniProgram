@@ -1,5 +1,16 @@
 <!--pages/Cpage/Cpage.wxml-->
- <view>
-    <text>{{bindvar}}</text>
-    <button catchtap='changetext'>改变字符</button>
- </view>
+<!--用于描述页面的结构 HTML-->
+<!--catch事件绑定阻止冒泡事件向上冒泡-->
+<!--bind事件绑定不阻止冒泡事件-->
+<view>
+  <text>{{bindvar}}</text>
+  <button catchtap='changetext'>改变字符</button>
+</view>
+
+<view wx:for="{{[1,2,3,4,5,6,7,8,9]}}" wx:for-item="i">
+  <view wx:for="{{[1,2,3,4,5,6,7,8,9]}}" wx:for-item="j">
+    <view wx:if="{{i<=j}}">
+      {{i}} * {{j}} = {{i * j}}
+    </view>
+  </view>
+</view>

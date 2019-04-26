@@ -1,122 +1,97 @@
+
+/*rpx::根据屏幕宽度自适应，1rpx = 0.5px = 1物理像素*/
 /*顶部导航栏布局style*/
 
 .menu {
-    position: fixed;
-    top: 0px;
-    width: 100%;
-    background: #fff;
-    border-bottom: rgb(235, 221, 221) solid 1px;
-    z-index: 100000;
+  position: relative;
+  top: 0px;
+  width: 100%;
+  background: #fff;
+  border-bottom: rgb(235, 221, 221) solid 1px;
+  z-index: 100000;
 }
 
 /*顶部导航栏可滑动style*/
 
 .top-nav {
-    white-space: nowrap;
-    width: 95%;
-    margin: 0 auto;
+  white-space: nowrap;
+  width: 95%;
+  margin: 0 auto;
 }
 
 /*顶部导航栏按钮style*/
 
 .top-btn {
-    display: inline-block;
-    padding: 16rpx;
-    font-size: 16px;
+  display: inline-block;
+  padding: 16rpx;
+  font-size: 16px;
 }
 
 /*顶部导航栏按钮被覆盖style*/
 
 .top-hoverd-btn {
-    color: #42bd56;
-    border-bottom: #42bd56 solid 1px;
+  color: #42bd56;
+  border-bottom: #42bd56 solid 1px;
 }
 
 /*显示内容横布局style*/
 
 .flex-row {
-    width: 100%;
-    top: 0;
-    display: flex; /*flex块级，inline-flex:行内快*/
-    flex-wrap: wrap; /*如果元素不是弹性盒对象的元素，则flex-wrap属性不起作用*/
-    position: relative;
-    justify-content: space-between; /*格子间隔*/
-    border: 1rpx;
-    border-style: solid;
-    border-color: #fff;
-    margin: 0;
+  width: 100%;
+  top: 0;
+  display: flex; /*弹性布局*/
+  flex-wrap: wrap; /*如果元素不是弹性盒对象的元素，则flex-wrap属性不起作用*/
+  position: relative;
+  justify-content: space-between; /*格子间隔：平均分布在轴上*/
+  border: 1rpx;
+  border-style: solid;
+  border-color: #fff;
+  margin: 0;
+
 }
 
 /*按钮布局style*/
 
 .r1 {
-    width: 49%;
-    height: 200rpx;
-    color: #0c95f0;
-    position: relative;
-    border: 1rpx;
-    border-style: solid;
-    border-color: #fff;
-    text-align: left;
-    font-size: 20rpx;
-    float: right;
+  width: 49%;
+  height: 200rpx;
+  color: #0c95f0;
+  position: relative;
+  border: 1rpx;
+  border-style: solid;
+  border-color: #fff;
+  text-align: left;
+  font-size: 20rpx;
+  float: right;
 }
 
 /*左侧按钮style*/
 
 .item_left {
-    flex: 1; /* 重要 */
-    align-items: center;
-    position: absolute;
-    left: 20px;
+  flex: 1; /* 重要 */
+  align-items: center; /* 元素位于侧轴中心 */
+  position: absolute;
+  left: 20px;
 }
 
 /*右侧按钮style*/
 
 .item_right {
-    position: absolute;
-    right: 20px;
-    align-items: center;
+  position: absolute;
+  right: 20px;
+  align-items: center;
 }
 
 .btn {
-    width: border-area;
-    height: 100%;
-    background-color: #e1eef7;
-    border-radius: 10rpx;
-    display: flex;
-    flex-direction: row;
-    flex-grow: 1;
-    align-items: center;
-    justify-content: left;
-    font-size: 30rpx;
-    padding: 20rpx;
-}
-
-.btn1 {
-    width: border-area;
-    height: 100%;
-    background-color: #e1eef7;
-    border-radius: 10rpx;
-    display: flex;
-    flex-direction: row;
-    flex-grow: 1;
-    align-items: center;
-    justify-content: left;
-    font-size: 30rpx;
-    padding: 20rpx;
-}
-
-.btn2 {
-    width: border-area;
-    height: 100%;
-    background-color: #e1eef7;
-    border-radius: 10rpx;
-    display: flex;
-    flex-direction: row;
-    flex-grow: 1;
-    align-items: center;
-    justify-content: left;
-    font-size: 30rpx;
-    padding: 20rpx;
+  width: border-area;
+  height: 100%;
+  background-color: #e1eef7;
+  border-radius: 10rpx;
+  display: flex; /* 弹性布局 */
+  flex-direction: row; /* 横向排列 */
+  flex-grow: 1;
+  align-items: center; /* 元素位于侧轴中心 */
+  justify-content: left;
+  font-size: 30rpx;
+  padding: 20rpx;
 }

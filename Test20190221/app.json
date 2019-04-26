@@ -6,7 +6,6 @@
     "pages/Mpage/Mpage",
     "pages/logs/logs"
   ],
-
   "window": {
     "backgroundColor": "#FF657AF4",
     "backgroundTextStyle": "light",
@@ -15,7 +14,6 @@
     "navigationBarTextStyle": "black",
     "enablePullDownRefresh": true
   },
-
   "tabBar": {
     "color": "#000000",
     "selectedColor": "#3cc51f",
@@ -52,13 +50,12 @@
       }
     ]
   },
-  
   "networkTimeout": {
     "request": 10000,
     "conectSocket": 10000,
     "uploadFile": 10000,
     "downloadFile": 10000
   },
-
-  "debug": true
+  "debug": true,
+  "sitemapLocation": "sitemap.json"
 }

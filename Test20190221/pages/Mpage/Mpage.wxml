@@ -1,4 +1,4 @@
-<!--index.wxml-->
+<!-- 数据绑定{{标签的属性0，内容txt，关键字true}} -->
 <view class="container">
   <view class="userinfo">
     <button 
