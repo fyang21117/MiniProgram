@@ -1,0 +1,25 @@
+<!--pages/media/music.wxml-->
+
+<view wx:if="{{temp == 0}}">
+<audio id="myAudio" style="text-algin:left" action="{{audioAction}}" 
+    src="{{current.src[0]}}" 
+   poster="{{current.poster[0]}}"
+   name="{{current.name[0]}}" 
+   author="{{current.author[0]}}" controls>
+</audio>
+</view>
+
+<view wx:if="{{temp == 1}}">
+<audio id="myAudio" style="text-algin:left" action="{{audioAction}}" 
+    src="{{current.src[1]}}" 
+   poster="{{current.poster[1]}}"
+   name="{{current.name[1]}}" 
+   author="{{current.author[1]}}" controls>
+</audio>
+</view>
+
+<button type="primary" bindtap="audioPlay">播放</button>
+<button type="primary" bindtap="audioPause">暂停</button>
+<button type="primary" bindtap="audioStart">重播</button>
+<button type="primary" bindtap="audioLast">上一首</button>
+<button type="primary" bindtap="audioNext">下一首</button>
