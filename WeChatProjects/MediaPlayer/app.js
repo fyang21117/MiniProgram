@@ -35,6 +35,6 @@ App({
   },
   globalData: {
     userInfo: null,
-    temp:0
+    index:0
   }
 })

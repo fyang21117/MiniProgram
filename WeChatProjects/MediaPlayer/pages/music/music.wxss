@@ -1,0 +1,77 @@
+/* pages/media/music.wxss */
+.lyric{
+  width: 100%;
+  height: 200px;
+  display:inline-block;
+  position: relative;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.last{
+  width: 33%;
+ display:inline-block;
+  position: relative;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.play{
+  width: 34%;
+   display:inline-block;
+    position: relative;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.next{
+  width: 33%;
+   display:inline-block;
+    position: relative;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.vplus{
+  width: 50%;
+ display:inline-block;
+  position: relative;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.vreduce{
+  width: 50%;
+ display:inline-block;
+  position: relative;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.pause{
+  width: 33.33%;
+ display:inline-block;
+  position: relative;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.mode{
+  width: 33.33%;
+ display:inline-block;
+  position: relative;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.stop{
+  width: 33.33%;
+ display:inline-block;
+  position: relative;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.container {
+  height: 100%;
+  display: flex;
+  position:relative;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: 200rpx 0;
+  box-sizing: border-box;
+} 

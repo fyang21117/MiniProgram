@@ -1,14 +1,58 @@
 {
   "pages": [
-    "pages/media/music",
+    "pages/music/music",
+    "pages/video/video",
     "pages/index/index",
     "pages/logs/logs"
   ],
   "window": {
     "backgroundTextStyle": "light",
     "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "WeChat",
+    "navigationBarTitleText": "MediaPlayer",
     "navigationBarTextStyle": "black"
   },
+  "tabBar": {
+    "color": "#000000",
+    "selectedColor": "#3cc51f",
+    "borderStyle": "black",
+    "backgroundColor": "#ffffff",
+    "list": [
+      {
+        "pagePath": "pages/music/music",
+        "iconPath": "pages/images/music1.png",
+        "selectedIconPath": "pages/images/music2.png",
+        "text": "MusicPlayer",
+        "color": "black"
+      },
+      {
+        "pagePath": "pages/video/video",
+        "iconPath": "pages/images/video1.png",
+        "selectedIconPath": "pages/images/video2.png",
+        "text": "VideoPlayer",
+        "color": "black"
+      },
+      {
+        "pagePath": "pages/index/index",
+        "iconPath": "pages/images/usr1.png",
+        "selectedIconPath": "pages/images/usr2.png",
+        "text": "User",
+        "color": "black"
+      },
+      {
+        "pagePath": "pages/logs/logs",
+        "iconPath": "pages/images/log1.png",
+        "selectedIconPath": "pages/images/log2.png",
+        "text": "Logs",
+        "color": "black"
+      }
+    ]
+  },
+    "networkTimeout": {
+      "request": 10000,
+      "conectSocket": 10000,
+      "uploadFile": 10000,
+      "downloadFile": 10000
+    },
+    "debug": true,
   "sitemapLocation": "sitemap.json"
 }

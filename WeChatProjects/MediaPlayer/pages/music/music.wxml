@@ -1,0 +1,25 @@
+<!--pages/media/music.wxml-->
+
+<view >
+<audio id="myAudio" style="text-algin:left" action="{{audioAction}}" 
+   src="{{current.src[index]}}" 
+   poster="{{current.poster[index]}}"
+   name="{{current.name[index]}}" 
+   author="{{current.author[index]}}" controls>
+</audio>
+</view>
+
+<view>
+<textarea class="lyric">这是歌词部分</textarea>
+</view>
+
+<button class="stop" bindtap="audioStart">重播</button>
+<button class="mode" bindtap="playmode">循环播放</button>
+<button class="pause" bindtap="audioPause">暂停</button>
+
+<button class="vplus" bindtap="voiceadd">音量+</button>
+<button class="vreduce" bindtap="voicereduce">音量-</button>
+
+<button class="last" bindtap="audioLast">上一首</button>
+<button class="play" type="primary"bindtap="audioPlay">播放</button>
+<button class="next"bindtap="audioNext">下一首</button>
